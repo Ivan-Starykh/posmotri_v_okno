@@ -17,7 +17,6 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  /* padding: 133px 37px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +62,7 @@ ol {
 
 .result__video {
   width: 711px;
-  height: 385px;
+  height: 386px;
   align-items: flex-start;
   object-fit: fill;
 }
@@ -73,6 +72,7 @@ ol {
   width: 711px;
   height: 54px;
   justify-content: space-between;
+  gap: 40px;
   align-items: flex-end;
   padding-top: 144px;
 }
@@ -81,7 +81,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 212px;
   height: 49px;
 }
 
@@ -94,15 +93,11 @@ ol {
 }
 
 .search-form__label {
-  display: inline-flex;
+  display: flex;
   gap: 5px;
   width: fit-content;
   cursor: pointer;
   align-items: center;
-}
-
-.search-form__checkbox-list label:hover {
-  text-decoration: underline;
 }
 
 .search-form__label-text:hover {
@@ -121,16 +116,20 @@ ol {
 
 .search-form__textfield {
   color: rgb(255 255 255 / 0.7);
-  min-width: 225px;
+  min-height: 22px;
   background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  font-family: 'Fira Sans' Condensed;
   font-size: 18px;
   line-height: normal;
   appearance: none;
   outline: 0;
+}
+
+input[type='text'] {
+  width: 225px;
+  letter-spacing: -0.9px;
 }
 
 .search-form__textfield:active {
@@ -144,7 +143,11 @@ ol {
 
 .search-form__checkbox-list {
   display: inline-flex;
-  gap: 20px;
+  gap: 15px;
+}
+
+.search-form__checkbox-list label:hover {
+  text-decoration: underline;
 }
 
 .search-form__pseudo-checkbox {
@@ -210,7 +213,7 @@ input[type='checkbox']:checked + span {
 
 .content__details {
   display: flex;
-  width: 100%;
+  width: 399px;
   height: 100%;
   flex-direction: column;
   align-items: flex-start;
@@ -235,18 +238,13 @@ input[type='checkbox']:checked + span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
   overflow: auto;
   position: relative;
   object-fit: fill;
 }
 
-.preloader-template {
-  position: absolute;
-}
-
 .content__list-item {
-  display: flex;
+  padding-bottom: 30px;
 }
 
 .content__card-link {
