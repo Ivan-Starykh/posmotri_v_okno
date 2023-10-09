@@ -182,8 +182,8 @@ input[type='text'] {
   border: 1px solid #000;
 }
 
-.search-form__label:focus-within {
-  outline: 1px solid #fff;
+.search-form__label:has(:focus-visible){
+	outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
