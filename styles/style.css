@@ -113,10 +113,6 @@ ol {
   text-decoration: none;
 }
 
-.search-form__checkbox-list label:focus {
-  outline: none;
-}
-
 .search-form__textfield {
   color: #fff;
   min-height: 22px;
@@ -246,7 +242,7 @@ ol {
 .title {
   width: 260px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, 'Bebas Neue', sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
